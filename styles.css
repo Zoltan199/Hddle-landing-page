@@ -11,14 +11,18 @@
     padding: 0;
 }
 
-main{
+body{
     background-color: var(--violet);
-    height: 100vh;
+}
+
+main{
     background-image: url(./images/bg-mobile.svg);
     background-repeat: no-repeat;
     background-size: contain;
     padding: 30px 35px;
     font-family: 'Open Sans';
+    height: 100vh;
+    color: white;
 }
 
 header{
@@ -30,10 +34,13 @@ header img{
 }
 
 article{
-    color: white;
+    display: flex;
+    align-content: space-between;
+    flex-direction: column;
+    height: 100%;
 }
 
-article img{
+article .image-container img{
     width: 100%;
 }
 
@@ -67,14 +74,14 @@ article .information{
     color: var(--violet);
 }
 
-footer{
+.social-media{
     display: flex;
     justify-content: center;
     gap: 10px;
 }
 
 
-footer i{
+.social-media i{
     font-size: 15px;
     color: white;
     border-radius:50%;
