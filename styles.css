@@ -19,7 +19,8 @@ body{
 main{
     background-image: url(./images/bg-mobile.svg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-position: center;
+    background-size: cover;
     padding: 30px 35px;
     font-family: 'Open Sans';
     color: white;
@@ -41,9 +42,15 @@ article{
     align-items: center;
 }
 
+article .image-container{
+    display: flex;
+    justify-content: center;
+}
+
 article .image-container img{
     width: 100%;
     max-width: 425px;
+    
 }
 
 article .information{
@@ -142,6 +149,6 @@ article .information{
     }
 
     .social-media{
-        justify-content: right;
+        justify-content: flex-end; 
     }
 }
